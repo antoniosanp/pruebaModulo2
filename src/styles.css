@@ -1,4 +1,934 @@
-*{
+:root{
+
+    --primario: #28CB8B;
+    --secundario: #263238;
+    --tercero: #2194F3;
+    /*grices*/
+
+    --black: #263238;
+    --d_grey: #4d4d4d;
+    --grey: #717171;
+    --l_grey: #89939e;
+    --grey_blue: #abbed1;
+    --silver: #f5f7fa;
+
+    /**/
+
+}
+
+@font-face {
+    font-family: "inter";
+    src: url("./fuentes/Inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+*{  
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+/*-------------------------Header-----------------------------------------*/
+h1{
+    color: var(--d_grey); 
+    font-size: 21.37px;
+    font-weight: bold;
+    font-family: "inter";
+    text-align: center;
+    
+}
+
+h1 span{
+    color: var(--primario);
+}
+
+.heroText p{
+    color: var(--grey);
+    text-align: center;
+}
+
+header{
+    background-color: var(--silver);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 18px;
+    align-items: center;
+}
+
+nav img{
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 10px;
+}
+
+nav ul li {
+    
+    font-size: larger;
+    border-bottom: 1px solid var(--l_grey);
+    width: 99vw;
+    text-align: center;
+    padding: 5px;
+}
+
+.botonesNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--l_grey);
+    width: 99vw;
+    padding-bottom: 15px;
+}
+
+.btnLogin, .btnSingUp{
+    width: 5rem;
+    border-radius: 50px;
+    height: 1.5rem;
+}
+
+.btnLogin{
+    color: var(--primario);
+}
+
+.btnSingUp{
+    color: var(--silver);
+    background-color: var(--primario);
+}
+
+.heroContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heroImgContainer img{
+    width: 100%;
+    padding: 10px;
+}
+
+.heroText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.btnRegister{
+    background-color: var(--primario);
+    width: 5rem;
+    border-radius: 5px;
+    color: var(--silver);
+    height: 1.5rem;
+}
+
+/*---------------------------clientes----------------------------*/
+
+.clientes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.clientes h2{
+    color: var(--d_grey);
+}
+.clientes p{
+    color: var(--grey);
+}
+
+.clientes ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+
+/*----------------------community------------------------------*/
+
+.community{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.community h2{
+    color: var(--d_grey);
+    text-align: center;
+}
+
+.community p{
+    text-align: center;
+    color: var(--grey);
+}
+
+.communityCardsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.communityCard{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 8px;
+    border-radius: 20px;
+    box-shadow: 1px 2px grey;
+}
+
+/*------------------------picelgrade-------------------------------*/
+
+
+.pixelgrade{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.pixelgradeTextContainer{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.pixelgradeTextContainer h2{
+    text-align: center;
+    color: var(--d_grey);
+}
+
+.pixelgradeTextContainer p{
+    text-align: justify;
+    color: var(--grey);
+}
+
+.btnLearnMorePixelgrade{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 8px;
+    background-color: var(--primario);
+    color: var(--silver);
+}
+
+/*------------------------------helpingBusines---------------------*/
+
+.helpingBusiness{
+    padding: 10px;
+    background-color: var(--silver);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.helpingBusinessLeft h2{
+    text-align: center;
+    color: var(--d_grey);
+    padding-bottom: 10px;
+
+}
+.helpingBusinessLeft h2 span{
+    color: var(--primario);
+}
+
+.helpingBusinessLeft p{
+    color: var(--grey);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.helpingBusinessRight{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+.helpginBusineesCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px var(--primario);
+    border-radius: 20px;
+    width: 8em;
+    
+}
+.helpginBusineesCard p{
+    color: var(--grey);
+}
+.helpginBusineesCard h3{
+    color: var(--d_grey);
+}
+
+/*----------------desingSite-----------------------------*/
+
+.desingSite{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.disingSiteRight{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    align-items: center;
+}
+
+.disingSiteRight h2{
+    text-align: center;
+    color: var(--d_grey);
+}
+
+.disingSiteRight p{
+    text-align: justify;
+    color: var(--grey);
+}
+
+.btnLearnMoreDisingSite{
+    width: 6rem;
+    height: 2rem;
+    background-color: var(--primario);
+    color: var(--silver);
+    border-radius: 5px;
+}
+
+
+/*------------------tesla-----------------------*/
+
+.tesla{
+    background-color: var(--silver);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+.teslaRight{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.teslaRight p{
+    color: var(--grey);
+    text-align: justify;
+}
+
+.teslaRight h4{
+    color: var(--primario);
+}
+
+.botes{
+    color: var(--l_grey)
+}
+
+.logosTesla{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logosTesla ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.logosTesla ul li h4{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/*--------------------caring------------------*/
+
+.caring{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.caring h2{
+    color: var(--d_grey);
+    text-align: center;
+}
+.caring p{
+    color: var(--grey);
+    text-align: justify;
+    padding: 10px;
+}
+
+.caringCardsContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    width: 80vw;
+    
+}
+
+.caringCardsContainer .textoCaring{
+    color: var(--d_grey);
+    text-align: center;
+}
+
+.caringCardsContainer .readmore{
+    color: var(--primario);
+
+}
+.caringCardsContainerContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+}
+.miniTextCaringContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--silver);
+    width: 13rem;
+    border-radius: 10px;
+    margin-top: -2.5em;
+    box-shadow: 1px 2px grey;
+}
+
+/*-----------pellentes-------------------------------*/
+
+.pellentes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: var(--silver);
+}
+
+.pellentes h2{
+    color: var(--d_grey);
+    text-align: center;
+}
+.btnGetDemoPellentes{
+    width: 7rem;
+    height: 1.5rem;
+    color: var(--silver);
+    background-color: var(--primario);
+    border: 8px;
+}
+
+/*-----------------------footer----------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: var(--secundario);
+    align-items: center;
+}
+
+.logosFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.logosFooter p{
+    color: var(--silver);
+    padding-bottom: 10px;
+}
+
+.logosRedesFooter ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.companyFooter, .supportFooter, .stayFooter{
+    
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--silver);
+    text-align: center;
+}
+
+.btnEmailFooter{
+    width: 9rem;
+    height: 1.5rem;
+    background-color: var(--l_grey);
+    border-radius: 8px;
+    color: var(--silver);
+}
+
+/*------------------------------Animaciones-----------------------*/
+
+button{
+    transition: all 0.5s ease;
+    border: none;
+}
+
+button:hover{
+    border: 1px solid var(--tercero);
+    background-color: var(--d_grey);
+    color: var(--silver);
+    transform: scale(1.1);
+}
+
+.communityCard, .helpginBusineesCard, .miniTextCaringContainer{
+    transition: all 0.5s ease;
+}
+.communityCard:hover, .helpginBusineesCard:hover, .miniTextCaringContainer:hover{
+    transform: scale(1.2);
+}
+    
+
+/*------------------Tablet-----------------------------------------*/
+
+
+@media (min-width: 768px){
+    *{
+        
+        gap: 0px;
+        margin: 0px;
+        pad: 0px;
+    }
+
+nav, nav ul, nav ul li, .botonesNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 2px;
+    padding: 10px;
+    
+}
+
+nav img{
+    
+    width: 20%;
+    padding: 0px;
+    margin-left: 20px;
+}
+
+nav ul li,  nav ul{
+    width: auto;
+    border: none;
+}
+
+header{
+    display: block;
+}
+
+nav{
+    justify-content: center;
+}
+
+
+.botonesNav{
+    padding-right: 30px;
+    border: none;
+}
+
+
+
+.heroContainer{
+    display: grid;
+    grid-template-columns: 8fr 3fr;
+    justify-content: left;
+}
+.heroText{
+    align-items: flex-start;
+    padding-left: 15%;
+}
+.heroText h1, .heroText p{
+    text-align: left;
+    
+}
+
+/*---------------------------------------Clientes-----------*/
+
+/*Gracias dios no tengo que hacer nada aquí*/
+
+/*--------community-----------------------------------*/
+
+.communityCardsContainer{
+    flex-direction: row;
+    gap: 20px;
+}
+
+.communityCard{
+    align-items: center;
+    width: 12rem;
+    height: 14rem;
+}
+.communityCard h3{
+    text-align: center;
+}
+
+/*------------------pixelgrade--------------------------------------*/
+
+.pixelgrade{
+    display: grid;
+    grid-template-columns:2fr 7fr ;
+}
+
+.pixelgradeTextContainer{
+    align-items: flex-start;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+/*--------------------helpingBusiness-------------*/
+
+.helpingBusiness{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.helpingBusinessLeft{
+    align-items: flex-start;
+    text-align: left;
+}
+
+.helpingBusinessLeft h2, .helpingBusinessLeft p{
+    text-align: left;
+    padding-left: 150px;
+}
+
+.helpingBusinessRight{
+    
+    gap: 5px;
+}
+
+/*-----------------------------desingSite---------------*/
+
+.desingSite{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+.desingSiteLeft
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.disingSiteRight{
+    align-items: start;
+    padding-right: 20px;
+}
+
+/*-----------------------tesla-----------------------*/
+
+.tesla{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    padding-left: 40px;
+}
+.teslaLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.teslaRight{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.logosTesla ul{
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------------caring------------------------*/
+
+.caring{
+    margin-bottom: 160px;
+}
+
+.caringCardsContainerContainer{
+    
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    gap: 160px;
+ 
+}
+
+.caringCardsContainer{
+    width: 10vw;
+    height: 15vw;
+}
+.miniTextCaringContainer{
+    height: 10rem;
+}
+
+
+/*-----------------pellentes---------------*/
+
+.pellentes h2{
+    font-size: 3.5rem;
+}
+.btnGetDemoPellentes{
+    height: 2.5em;
+}
+
+/*------------------footer----------*/
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+.companyFooter, .supportFooter, .stayFooter{
+    
+    width: 10vw;
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+/*------------------Desktop------------------------------------*/
+
+@media (min-width: 1024px){
+  
+
+ /*---------------header--------*/
+ 
+ 
+.botonesNav{
+    padding-right: 60px;
+    gap: 20px;
+    border: none;
+}
+
+nav ul{
+    margin-left: 110px;
+}
+
+h1{
+    font-size: 60px;
+}
+
+
+.heroContainer{
+    display: grid;
+    grid-template-columns: 8fr 5fr;
+    justify-content: left;
+}
+.heroText{
+    align-items: flex-start;
+    padding-left: 15%;
+}
+.heroText h1, .heroText p{
+    text-align: left;
+    
+}
+.heroText p {
+    font-size: 20px;
+}
+
+/*-----------------clientes--------------*/
+
+.clientes h2{
+    font-size: 50px;
+}
+
+.clientes p{
+    font-size: 20px;
+}
+
+.clientes ul{
+    gap: 60px;
+}
+
+/*--------------community-------------------------*/
+.communityCardsContainer{
+    gap: 70px;
+}
+/*-----------------pixelgrade----------------------*/
+.pixelgrade{
+    grid-template-columns: 4fr 7fr;
+}
+.pixelgradImgContainer{
+   padding-left: 180px;
+    display: flex;
+    justify-content: center;
+}
+.pixelgradeTextContainer{
+    padding-right: 220px;
+   
+}
+.pixelgradeTextContainer p{
+    font-size: 20px;
+}
+
+/*-------------helping----------------------------*/
+
+
+
+
+.helpingBusiness{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.helpingBusinessLeft{
+    align-items: flex-end;
+    text-align: left;
+    padding-left: 180px;
+}
+
+.helpingBusinessLeft h2, .helpingBusinessLeft p{
+    text-align: left;
+    padding-left: 150px;
+}
+.helpingBusinessLeft p{
+    font-size: 20px;
+}
+.helpingBusinessLeft h2{
+    font-size: 30px;
+}
+
+.helpingBusinessRight{
+    
+    gap: 5px;
+    padding-right: 180px;
+}
+
+/*-------------------------------desing------*/
+
+.desingSite{
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+}
+.desingSiteLeft
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.disingSiteRight{
+    align-items: start;
+    padding-right: 150px;
+}
+.disingSiteRight p{
+    font-size: 20px;
+}
+
+/*----------------------tesla--------------*/
+
+
+.tesla{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    padding-left: 100px;
+    margin-bottom: 30px;
+}
+.teslaLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.teslaRight{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 140px;
+}
+.teslaRight p{
+    font-size: 20px;
+}
+.logosTesla ul{
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------------caring------------*/
+
+
+.caring{
+    margin-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+.caring h2{
+    font-size: 36px;
+}
+.caring p{
+    font-size: 20px;
+}
+
+
+/*-------------pellentes*-------------*/
+
+.pellentes{
+    padding:80px
+}
+
+/*--------footer----------*/
+
+footer{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+
+
 }
